@@ -388,6 +388,7 @@ class DateRangePicker extends React.PureComponent {
       small,
       disabled,
       theme: { reactDates },
+      noBorder,
     } = this.props;
     const { dayPickerContainerStyles, isDayPickerFocused, showKeyboardShortcuts } = this.state;
 
@@ -470,6 +471,7 @@ class DateRangePicker extends React.PureComponent {
           transitionDuration={transitionDuration}
           disabled={disabled}
           horizontalMonthPadding={horizontalMonthPadding}
+          noBorder={onBorder}
         />
 
         {withFullScreenPortal && (
